@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btn_options"
+        android:title="mas"
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        app:showAsAction="always"
+        android:orderInCategory="100">
+
+        <menu>
+                <item
+                android:id="@+id/btn_config"
+                android:icon="@drawable/ic_baseline_settings_24"
+                android:title="@string/btn_configuracion"
+                android:orderInCategory="100"
+                />
+                <item
+                    android:id="@+id/btn_hist"
+                    android:icon="@drawable/ic_baseline_history_24"
+                    android:title="@string/btn_historial"
+                    android:orderInCategory="100"
+                />
+                <item
+                android:id="@+id/btn_acde"
+                android:icon="@drawable/ic_baseline_menu_book_24"
+                android:title="@string/btn_aboutus"
+                android:orderInCategory="100"
+                />
+                 <item
+                android:id="@+id/btn_salir"
+                android:icon="@drawable/ic_baseline_cancel_24"
+                android:title="@string/salir"
+                android:orderInCategory="100"
+                />
+
+        </menu>
+
+    </item>
+
+</menu>

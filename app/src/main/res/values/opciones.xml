@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lista_egresos">Lista de egresos
+        <item>Renta</item>
+        <item>Comida</item>
+        <item>Transporte</item>
+    </string-array>
+</resources>
