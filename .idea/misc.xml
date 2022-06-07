@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/drawable/barra.xml" value="0.114" />
+        <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/drawable/corners.xml" value="0.1" />
+        <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/drawable/cuadrado_corners.xml" value="0.1" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/drawable/custom_button.xml" value="0.1555" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/drawable/degradado.xml" value="0.1555" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/drawable/ic_baseline_cancel_24.xml" value="0.1" />
@@ -25,6 +27,7 @@
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/layout/activity_pantalla2.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/layout/activity_pantalla3.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/layout/activity_pantalla4.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/layout/activity_recomendaciones.xml" value="0.22" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/menu/menu_acercade.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/menu/menu_configuracion.xml" value="0.1" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/menu/menu_historial.xml" value="0.1" />

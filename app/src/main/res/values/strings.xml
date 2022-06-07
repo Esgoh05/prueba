@@ -2,7 +2,7 @@
     <string name="app_name">prueba</string>
     <string name="btn_configuracion">Configuración</string>
     <string name="btn_historial">Historial</string>
-    <string name="btn_aboutus">Info</string>
+    <string name="btn_aboutus">Recomendaciones</string>
     <string name="salir">Salir</string>
     <string name="regresar">Back</string>
     <string name="edt_cantidad">$ 0.00</string>
