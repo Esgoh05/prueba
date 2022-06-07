@@ -34,8 +34,10 @@ public class AcercaDeActivity extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setTheme(R.style.ChanceColor);
+            //setContentView(R.layout.activity_recomendaciones);
+            //setContentView(R.layout.activity_rec);
             setContentView(R.layout.activity_acercade);
-            setTitle("Info ");
+            setTitle("Recomendaciones ");
 
         }
     }
