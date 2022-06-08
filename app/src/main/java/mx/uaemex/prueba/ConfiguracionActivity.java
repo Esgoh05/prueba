@@ -49,6 +49,7 @@ public class ConfiguracionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.ChanceColor);
         super.onCreate(savedInstanceState);
+        //setContentView(R.layout.activity_configuracion1);
         setContentView(R.layout.activity_configuracion);
         setTitle("Configuración");
 
