@@ -13,6 +13,8 @@ public class AcercaDeActivity extends AppCompatActivity {
     private View Recomendaciones;
     private View Recomendaciones1;
     private View Recomendaciones2;
+    private View Recomendaciones3;
+    private View Recomendaciones4;
     private RelativeLayout txtRecomendaciones;
     private RelativeLayout txtRecomendaciones1;
     private RelativeLayout txtRecomendaciones2;
@@ -41,8 +43,10 @@ public class AcercaDeActivity extends AppCompatActivity {
             setTitle("Recomendaciones ");
 
             Recomendaciones = findViewById(R.id.item_txtTip2);
-            Recomendaciones1 = findViewById(R.id.item_txtRec1);
+            Recomendaciones1 = findViewById(R.id.item_txtRec);
             Recomendaciones2 = findViewById(R.id.txtRec);
+            Recomendaciones3 = findViewById(R.id.item_txtTip1);
+            Recomendaciones4 = findViewById(R.id.item_textName3);
             txtRecomendaciones = findViewById(R.id.relativeLayout3);
             txtRecomendaciones1 = findViewById(R.id.relativeLayout4);
             txtRecomendaciones3 = findViewById(R.id.relativeLayout1);
@@ -56,31 +60,27 @@ public class AcercaDeActivity extends AppCompatActivity {
                     //.show();
                     if(Recomendaciones1.getVisibility() == View.VISIBLE){
                         txtRecomendaciones1.setVisibility(View.VISIBLE);
-                        txtRecomendaciones.setVisibility(View.INVISIBLE);
                         txtRecomendaciones2.setVisibility(View.INVISIBLE);
                     }
                     else {
                         txtRecomendaciones1.setVisibility(View.INVISIBLE);
-                        txtRecomendaciones.setVisibility(View.VISIBLE);
                     }
 
                 }
             });
 
-            Recomendaciones2.setOnClickListener(new View.OnClickListener() {
+            Recomendaciones4.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     //txtRecomendaciones.setVisibility(View.GONE);
                     //Toast.makeText(getApplicationContext(), "#Tip 2. Que tus gastos no excedan la cantidad de tus ingresos", Toast.LENGTH_LONG)
                     //.show();
-                    if(Recomendaciones1.getVisibility() == View.VISIBLE){
-                        txtRecomendaciones1.setVisibility(View.VISIBLE);
-                        txtRecomendaciones.setVisibility(View.INVISIBLE);
-                        txtRecomendaciones2.setVisibility(View.INVISIBLE);
+                    if(Recomendaciones2.getVisibility() == View.VISIBLE){
+                        txtRecomendaciones2.setVisibility(View.VISIBLE);
+                        txtRecomendaciones1.setVisibility(View.INVISIBLE);
                     }
                     else {
-                        txtRecomendaciones1.setVisibility(View.INVISIBLE);
-                        txtRecomendaciones.setVisibility(View.VISIBLE);
+                        txtRecomendaciones2.setVisibility(View.INVISIBLE);
                     }
 
                 }
