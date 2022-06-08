@@ -75,6 +75,7 @@
             android:layout_marginBottom="170dp"
             android:ems="20"
             android:hint="@string/edt_cantidad"
+            android:textAlignment="center"
             android:inputType="number"
             android:visibility="invisible" />
 
@@ -87,6 +88,7 @@
             android:layout_marginStart="210dp"
             android:layout_marginBottom="80dp"
             android:ems="20"
+            android:textAlignment="center"
             android:hint="@string/edt_cantidad"
             android:inputType="number"
             android:visibility="invisible" />

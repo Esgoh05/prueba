@@ -16,12 +16,16 @@ public class AcercaDeActivity extends AppCompatActivity {
     private View Recomendaciones3;
     private View Recomendaciones4;
     private View Recomendaciones5;
+    private View Recomendaciones6;
+    private View Recomendaciones7;
     private RelativeLayout txtRecomendaciones;
     private RelativeLayout txtRecomendaciones1;
     private RelativeLayout txtRecomendaciones2;
     private RelativeLayout txtRecomendaciones3;
     private RelativeLayout txtRecomendaciones4;
     private RelativeLayout txtRecomendaciones5;
+    private RelativeLayout txtRecomendaciones6;
+    private RelativeLayout txtRecomendaciones7;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -44,12 +48,16 @@ public class AcercaDeActivity extends AppCompatActivity {
             Recomendaciones3 = findViewById(R.id.item_txtTip1);
             Recomendaciones4 = findViewById(R.id.item_textName3);
             Recomendaciones5 = findViewById(R.id.txtRec2);
+            Recomendaciones6 = findViewById(R.id.item_txtTip3);
+            Recomendaciones7 = findViewById(R.id.txtRec3);
             txtRecomendaciones = findViewById(R.id.relativeLayout3);
             txtRecomendaciones1 = findViewById(R.id.relativeLayout4);
             txtRecomendaciones3 = findViewById(R.id.relativeLayout1);
             txtRecomendaciones2 = findViewById(R.id.relativeLayout5);
             txtRecomendaciones4 = findViewById(R.id.relativeLayout6);
             txtRecomendaciones5 = findViewById(R.id.relativeLayout2);
+            txtRecomendaciones6 = findViewById(R.id.relativeLayout7);
+            txtRecomendaciones7 = findViewById(R.id.relativeLayout8);
 
             Recomendaciones.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -61,6 +69,7 @@ public class AcercaDeActivity extends AppCompatActivity {
                         txtRecomendaciones1.setVisibility(View.VISIBLE);
                         txtRecomendaciones2.setVisibility(View.INVISIBLE);
                         txtRecomendaciones4.setVisibility(View.INVISIBLE);
+                        txtRecomendaciones7.setVisibility(View.INVISIBLE);
                     }
                     else {
                         txtRecomendaciones1.setVisibility(View.INVISIBLE);
@@ -79,6 +88,7 @@ public class AcercaDeActivity extends AppCompatActivity {
                         txtRecomendaciones2.setVisibility(View.VISIBLE);
                         txtRecomendaciones1.setVisibility(View.INVISIBLE);
                         txtRecomendaciones4.setVisibility(View.INVISIBLE);
+                        txtRecomendaciones7.setVisibility(View.INVISIBLE);
                     }
                     else {
                         txtRecomendaciones2.setVisibility(View.INVISIBLE);
@@ -94,9 +104,29 @@ public class AcercaDeActivity extends AppCompatActivity {
                         txtRecomendaciones4.setVisibility(View.VISIBLE);
                         txtRecomendaciones1.setVisibility(View.INVISIBLE);
                         txtRecomendaciones2.setVisibility(View.INVISIBLE);
+                        txtRecomendaciones7.setVisibility(View.INVISIBLE);
                     }
                     else {
                         txtRecomendaciones4.setVisibility(View.INVISIBLE);
+                    }
+
+                }
+            });
+
+            Recomendaciones6.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //txtRecomendaciones.setVisibility(View.GONE);
+                    //Toast.makeText(getApplicationContext(), "#Tip 2. Que tus gastos no excedan la cantidad de tus ingresos", Toast.LENGTH_LONG)
+                    //.show();
+                    if(Recomendaciones7.getVisibility() == View.VISIBLE){
+                        txtRecomendaciones7.setVisibility(View.VISIBLE);
+                        txtRecomendaciones2.setVisibility(View.INVISIBLE);
+                        txtRecomendaciones4.setVisibility(View.INVISIBLE);
+                        txtRecomendaciones1.setVisibility(View.INVISIBLE);
+                    }
+                    else {
+                        txtRecomendaciones7.setVisibility(View.INVISIBLE);
                     }
 
                 }
