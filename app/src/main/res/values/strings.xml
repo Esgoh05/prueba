@@ -11,10 +11,12 @@
     <string name="tip1"><u>#Tip 1</u></string>
     <string name="tip2"><u>#Tip 2</u></string>
     <string name="tip3"><u>#Tip 3</u></string>
+    <string name="tip4"><u>Más info</u></string>
     <string name="recomendaciones">Recomendaciones</string>
     <string name="tip1_1">#Tip 1</string>
     <string name="tip2_2">#Tip 2</string>
     <string name="tip3_3">#Tip 3</string>
+    <string name="tip4_4">Más info</string>
     <string name="layout5_rec">Te dejamos algunas:</string>
     <string name="layout8_rec">Que tus gastos no excedan la cantidad de tus ingresos...</string>
 
