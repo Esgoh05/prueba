@@ -15,6 +15,7 @@ public class HistorialActivity extends AppCompatActivity {
         setTheme(R.style.ChanceColor);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_historial);
+        //setContentView(R.layout.activity_historial2);
         setTitle("Historial");
 
         ActionBar actionBar = getSupportActionBar();

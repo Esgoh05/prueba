@@ -19,6 +19,13 @@
         <item name="colorPrimaryVariant">#001EB6</item>
     </style>
 
+    <style name="SearchView" parent="">
+        <item name="android:editTextColor">@android:color/holo_purple</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="tint">@color/black</item>
+    </style>
+
     <style name="Imagensplash" parent="Theme.Prueba">
         <item name="android:windowBackground">
             @drawable/puerquito_splash

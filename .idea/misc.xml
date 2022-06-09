@@ -14,6 +14,7 @@
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.1" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/drawable/ic_baseline_menu_book_24.xml" value="0.114" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.1" />
+        <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/drawable/ic_baseline_style_24.xml" value="0.1" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
@@ -24,12 +25,13 @@
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/layout/activity_configuracion.xml" value="0.25" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/layout/activity_configuracion1.xml" value="0.18" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/layout/activity_historial.xml" value="0.22" />
+        <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/layout/activity_historial2.xml" value="0.2" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/layout/activity_pantalla2.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/layout/activity_pantalla3.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/layout/activity_pantalla4.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/layout/activity_rec.xml" value="0.11503623188405797" />
-        <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/layout/activity_recomendaciones.xml" value="0.25" />
+        <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/layout/activity_recomendaciones.xml" value="0.20694444444444443" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/menu/menu_acercade.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/menu/menu_configuracion.xml" value="0.1" />
         <entry key="..\:/Users/Fanny/AndroidStudioProjects/prueba/app/src/main/res/menu/menu_historial.xml" value="0.1" />
