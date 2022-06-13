@@ -33,12 +33,16 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, ConfiguracionActivity.class);
             startActivity(intent);
         }
+        if (id == R.id.btn_resumen) {
+            Intent intent = new Intent(this, ResumenActivity.class);
+            startActivity(intent);
+        }
         if (id == R.id.btn_hist) {
             Intent intent = new Intent(this, HistorialActivity.class);
             startActivity(intent);
         }
         if (id == R.id.btn_acde) {
-            Intent intent = new Intent(this, AcercaDeActivity.class);
+            Intent intent = new Intent(this, RecomendacionesActivity.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);

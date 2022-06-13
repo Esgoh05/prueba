@@ -11,27 +11,41 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prueba">
         <activity
-            android:name=".AcercaDeActivity"
-            android:parentActivityName=".MainActivity"
-            android:exported="false" />
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+            android:name=".ConfiguracionActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+
+        <activity
+            android:name=".RecomendacionesActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+
         <activity
             android:name=".HistorialActivity"
-            android:parentActivityName=".MainActivity"
-            android:exported="false" />
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+
         <activity
-            android:name=".ConfiguracionActivity"
+            android:name=".ResumenActivity"
+            android:exported="false"
             android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait"
-            android:exported="false" />
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
