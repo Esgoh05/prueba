@@ -26,6 +26,9 @@ import com.github.mikephil.charting.data.PieEntry;
 import java.util.ArrayList;
 import java.util.List;
 
+import mx.uaemex.prueba.DB.conecctionBDChanchito;
+import mx.uaemex.prueba.DB.objectsChanchito.etiquetas;
+
 public class ConfiguracionActivity extends AppCompatActivity {
 
 
@@ -33,9 +36,9 @@ public class ConfiguracionActivity extends AppCompatActivity {
     private Spinner listaEgresos;
     private View txtClickOtros;
     private EditText edtNCantidad;
-    private EditText edtNCantidadOt;
     private EditText edtAgregarOt;
     private Button btnAgregar;
+    private conecctionBDChanchito db;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -56,10 +59,11 @@ public class ConfiguracionActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         ((ActionBar) actionBar).setDisplayHomeAsUpEnabled(true);
 
-        Spinner spinner = (Spinner) findViewById(R.id.spiner);
+//        llenaLista();
+        listaEgresos = (Spinner) findViewById(R.id.spiner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.lista_egresos, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
+        listaEgresos.setAdapter(adapter);
 
         pie = (PieChart) findViewById(R.id.pie);
         list=new ArrayList<>();
@@ -122,12 +126,12 @@ public class ConfiguracionActivity extends AppCompatActivity {
 //        line.animateXY(2000,2000);// Animación mixta de dos ejes XY
 
         myTextClick = findViewById(R.id.text_click);
-        listaEgresos = findViewById(R.id.spiner);
+//        listaEgresos = findViewById(R.id.spiner);
         txtClickOtros = findViewById(R.id.text_click_otros);
         edtNCantidad = findViewById(R.id.edtNumberCantidad);
-        edtNCantidadOt = findViewById(R.id.edtNumberCantidadOt);
         edtAgregarOt = findViewById(R.id.edtAgregarOt);
         btnAgregar = findViewById(R.id.btn_agregar);
+
 
         //btnAgregar.setBackgroundColor(Color.parseColor("#1976D2"));
         btnAgregar.setBackgroundResource(R.drawable.custom_button); //shape, contorno de esquinas para boton
@@ -151,7 +155,6 @@ public class ConfiguracionActivity extends AppCompatActivity {
                     txtClickOtros.setVisibility(View.INVISIBLE);
                     edtNCantidad.setVisibility(View.INVISIBLE);
                     edtAgregarOt.setVisibility(View.INVISIBLE);
-                    edtNCantidadOt.setVisibility(View.INVISIBLE);
                     btnAgregar.setVisibility(View.INVISIBLE);
                 }
             }
@@ -161,13 +164,11 @@ public class ConfiguracionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(edtAgregarOt.getVisibility() == View.INVISIBLE){ //si es Visible lo pones Gone
-                    edtNCantidadOt.setVisibility(View.VISIBLE);
                     edtAgregarOt.setVisibility(View.VISIBLE);
                     //Toast.makeText(getApplicationContext(), "Elige campos", Toast.LENGTH_LONG)
                     //.show();
                 }
                 else{ // si no es Visible, lo pones
-                    edtNCantidadOt.setVisibility(View.INVISIBLE);
                     edtAgregarOt.setVisibility(View.INVISIBLE);
                 }
 
@@ -175,5 +176,35 @@ public class ConfiguracionActivity extends AppCompatActivity {
 
         });
 
+        btnAgregar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getApplicationContext(), "Remplazar por tu codigo", Toast.LENGTH_LONG)
+                //.show();
+            }
+        });
+
     }
+
+    private void llenaLista(){
+        ArrayList<etiquetas> etiquetasList = db.getEtiquetas();
+        String[] etiquetasSting = null;
+        int i = 0;
+        for (etiquetas etiq:
+                etiquetasList) {
+            etiquetasSting [i] = etiq.getNAME_ETIQUETA();
+            i++;
+        }
+        listaEgresos.setAdapter(new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, etiquetasSting ));
+
+    }
+
+    public void insertLista(String etiqueta){
+        etiquetas insert = new etiquetas();
+        insert.setNAME_ETIQUETA(etiqueta);
+        db.inserNewEtiqueta(insert);
+        llenaLista();
+    }
+
+
 }

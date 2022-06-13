@@ -79,19 +79,6 @@
             android:inputType="number"
             android:visibility="invisible" />
 
-        <EditText
-            android:id="@+id/edtNumberCantidadOt"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="210dp"
-            android:layout_marginBottom="80dp"
-            android:ems="20"
-            android:textAlignment="center"
-            android:hint="@string/edt_cantidad"
-            android:inputType="number"
-            android:visibility="invisible" />
 
         <EditText
             android:id="@+id/edtAgregarOt"
