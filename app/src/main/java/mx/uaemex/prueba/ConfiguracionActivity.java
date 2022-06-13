@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -38,7 +39,7 @@ public class ConfiguracionActivity extends AppCompatActivity {
     private EditText edtNCantidad;
     private EditText edtAgregarOt;
     private Button btnAgregar;
-    private conecctionBDChanchito db;
+    conecctionBDChanchito db;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -50,6 +51,7 @@ public class ConfiguracionActivity extends AppCompatActivity {
     List<PieEntry> list;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        db = new conecctionBDChanchito(this);
         setTheme(R.style.ChanceColor);
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_configuracion1);
@@ -59,11 +61,12 @@ public class ConfiguracionActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         ((ActionBar) actionBar).setDisplayHomeAsUpEnabled(true);
 
-//        llenaLista();
+
         listaEgresos = (Spinner) findViewById(R.id.spiner);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.lista_egresos, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        listaEgresos.setAdapter(adapter);
+        llenaLista();
+//        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.lista_egresos, android.R.layout.simple_spinner_item);
+//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        listaEgresos.setAdapter(adapter);
 
         pie = (PieChart) findViewById(R.id.pie);
         list=new ArrayList<>();
@@ -181,6 +184,7 @@ public class ConfiguracionActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //Toast.makeText(getApplicationContext(), "Remplazar por tu codigo", Toast.LENGTH_LONG)
                 //.show();
+                insertLista(edtAgregarOt.getText().toString());
             }
         });
 
@@ -188,18 +192,24 @@ public class ConfiguracionActivity extends AppCompatActivity {
 
     private void llenaLista(){
         ArrayList<etiquetas> etiquetasList = db.getEtiquetas();
-        String[] etiquetasSting = null;
+        String[] etiquetasSting = new String[etiquetasList.size()];
         int i = 0;
         for (etiquetas etiq:
                 etiquetasList) {
+            Log.d("llenar lista ", etiq.getNAME_ETIQUETA());
             etiquetasSting [i] = etiq.getNAME_ETIQUETA();
             i++;
+        }
+        for (String eti:
+        etiquetasSting) {
+            Log.d("Arreglo lleno", eti);
         }
         listaEgresos.setAdapter(new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, etiquetasSting ));
 
     }
 
     public void insertLista(String etiqueta){
+        Log.d("Resultado" , etiqueta);
         etiquetas insert = new etiquetas();
         insert.setNAME_ETIQUETA(etiqueta);
         db.inserNewEtiqueta(insert);

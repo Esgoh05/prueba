@@ -7,6 +7,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 
@@ -56,6 +57,7 @@ public class conecctionBDChanchito extends SQLiteOpenHelper {
         }
 
         public long inserNewEtiqueta(etiquetas newEtiqueta){
+            Log.d("Resultado conecctionBD", newEtiqueta.getNAME_ETIQUETA());
             SQLiteDatabase db  = this.getWritableDatabase();
             ContentValues values = new ContentValues();
             etiquetasGastos etiqueta = new etiquetasGastos();
@@ -93,7 +95,7 @@ public class conecctionBDChanchito extends SQLiteOpenHelper {
 
             while (cursor.moveToNext()){
                 etiquetas etiqueta = new etiquetas();
-
+                etiqueta.setID_PK(cursor.getInt(cursor.getColumnIndex(tabla.getIdPk())));
                 etiqueta.setNAME_ETIQUETA(cursor.getString(cursor.getColumnIndex(tabla.getNameEtiqueta())));
 
                 list.add(etiqueta);
