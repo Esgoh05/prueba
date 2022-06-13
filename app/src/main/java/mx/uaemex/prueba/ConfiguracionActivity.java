@@ -64,6 +64,7 @@ public class ConfiguracionActivity extends AppCompatActivity {
 
         listaEgresos = (Spinner) findViewById(R.id.spiner);
         llenaLista();
+        //datos cargados estaticos
 //        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.lista_egresos, android.R.layout.simple_spinner_item);
 //        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 //        listaEgresos.setAdapter(adapter);
