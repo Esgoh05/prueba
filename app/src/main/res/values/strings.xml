@@ -23,5 +23,6 @@
     <string name="layout6_rec">Establezca prioridades financieras. Priorizar metas contribuye a una mejor distribuicion.</string>
     <string name="txtVConf1">¿Con que frecuencia obtienes ingresos?</string>
     <string name="txtVConf2">¿Cual es el periodo?</string>
+    <string name="txtVConf3">Monto</string>
 
 </resources>

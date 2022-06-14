@@ -3,12 +3,15 @@ package mx.uaemex.prueba;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -18,6 +21,7 @@ public class ConfiguracionActivity extends AppCompatActivity {
 
     private Spinner listaFrecuenciaPago;
     private Spinner listaPeriodoPago;
+    private Button btnAddIng;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +32,11 @@ public class ConfiguracionActivity extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         ((ActionBar) actionBar).setDisplayHomeAsUpEnabled(true);
+
+        btnAddIng = findViewById(R.id.btn_add_ingresos);
+
+        btnAddIng.setBackgroundResource(R.drawable.custom_button); //shape, contorno de esquinas para boton
+        btnAddIng.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#1976D2")));
 
         listaFrecuenciaPago = (Spinner) findViewById(R.id.spiner_frecuencia);
         listaPeriodoPago = (Spinner) findViewById(R.id.spiner_periodo);
