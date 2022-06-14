@@ -58,7 +58,7 @@
             android:layout_width="340dp"
             android:layout_height="530dp"
             android:layout_marginTop="30dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="40dp"
             android:background="@drawable/cuadrado_corners"
             android:elevation="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
