@@ -35,6 +35,7 @@ public class ResumenActivity extends AppCompatActivity {
     private EditText edtNCantidad;
     private EditText edtAgregarOt;
     private Button btnAgregar;
+    private Button btnInsertar;
     conecctionBDChanchito db;
 
     @Override
@@ -131,11 +132,15 @@ public class ResumenActivity extends AppCompatActivity {
         edtNCantidad = findViewById(R.id.edtNumberCantidad);
         edtAgregarOt = findViewById(R.id.edtAgregarOt);
         btnAgregar = findViewById(R.id.btn_agregar);
+        btnInsertar = findViewById(R.id.btn_insertar);
 
 
         //btnAgregar.setBackgroundColor(Color.parseColor("#1976D2"));
         btnAgregar.setBackgroundResource(R.drawable.custom_button); //shape, contorno de esquinas para boton
         btnAgregar.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#1976D2")));
+
+        btnInsertar.setBackgroundResource(R.drawable.custom_button); //shape, contorno de esquinas para boton
+        btnInsertar.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#1976D2")));
 
         myTextClick.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -146,7 +151,9 @@ public class ResumenActivity extends AppCompatActivity {
                     listaEgresos.setVisibility(View.VISIBLE);
                     txtClickOtros.setVisibility(View.VISIBLE);
                     edtNCantidad.setVisibility(View.VISIBLE);
-                    btnAgregar.setVisibility(View.VISIBLE);
+                    edtAgregarOt.setVisibility(View.INVISIBLE);
+                    btnInsertar.setVisibility(View.VISIBLE);
+                    btnAgregar.setVisibility(View.INVISIBLE);
                     //Toast.makeText(getApplicationContext(), "Elige campos", Toast.LENGTH_LONG)
                     //.show();
                 }
@@ -155,7 +162,8 @@ public class ResumenActivity extends AppCompatActivity {
                     txtClickOtros.setVisibility(View.INVISIBLE);
                     edtNCantidad.setVisibility(View.INVISIBLE);
                     edtAgregarOt.setVisibility(View.INVISIBLE);
-                    btnAgregar.setVisibility(View.INVISIBLE);
+                    //btnAgregar.setVisibility(View.INVISIBLE);
+                    btnInsertar.setVisibility(View.INVISIBLE);
                 }
             }
         });
@@ -163,13 +171,19 @@ public class ResumenActivity extends AppCompatActivity {
         txtClickOtros.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(edtAgregarOt.getVisibility() == View.INVISIBLE){ //si es Visible lo pones Gone
+                if(btnAgregar.getVisibility() == View.INVISIBLE){ //si es Visible lo pones Gone
                     edtAgregarOt.setVisibility(View.VISIBLE);
+                    listaEgresos.setVisibility(View.INVISIBLE);
+                    edtNCantidad.setVisibility(View.INVISIBLE);
+                    btnAgregar.setVisibility(View.VISIBLE);
+                    btnInsertar.setVisibility(View.INVISIBLE);
                     //Toast.makeText(getApplicationContext(), "Elige campos", Toast.LENGTH_LONG)
                     //.show();
                 }
                 else{ // si no es Visible, lo pones
                     edtAgregarOt.setVisibility(View.INVISIBLE);
+                    btnAgregar.setVisibility(View.INVISIBLE);
+                    txtClickOtros.setVisibility(View.INVISIBLE);
                 }
 
             }

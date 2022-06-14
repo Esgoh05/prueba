@@ -28,7 +28,7 @@ public class ConfiguracionActivity extends AppCompatActivity {
         setTheme(R.style.ChanceColor);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_configuracion);
-        setTitle("Ingresos");
+        setTitle("Configuración de ingresos");
 
         ActionBar actionBar = getSupportActionBar();
         ((ActionBar) actionBar).setDisplayHomeAsUpEnabled(true);

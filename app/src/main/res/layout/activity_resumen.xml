@@ -103,6 +103,19 @@
             android:text="Agregar"
             android:visibility="invisible" />
 
+        <Button
+            android:id="@+id/btn_insertar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="30dp"
+            android:text="Insertar"
+            android:visibility="invisible" />
+
 
 </RelativeLayout>
 
