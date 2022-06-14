@@ -52,7 +52,7 @@ public class ResumenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_configuracion1);
         setContentView(R.layout.activity_resumen);
-        setTitle("Configuración");
+        setTitle("Resumen");
 
         ActionBar actionBar = getSupportActionBar();
         ((ActionBar) actionBar).setDisplayHomeAsUpEnabled(true);
