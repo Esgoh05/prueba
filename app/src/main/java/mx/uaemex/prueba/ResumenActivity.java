@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.res.ColorStateList;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -110,6 +111,11 @@ public class ResumenActivity extends AppCompatActivity {
         pie.getDescription().setText("Esta es la forma de modificar esa cadena de inglés");        // Modificar la visualización de las letras en la esquina inferior derecha
         pie.getDescription().setTextSize(20);                                        //tamaño de fuente
         pie.getDescription().setTextColor(Color.RED);                          //color de fuente
+
+        //pie.setTransparentCircleAlpha(300);
+        pie.setEntryLabelColor(Color.parseColor("#1976D2"));
+        //pie.setEntryLabelTypeface(Typeface.DEFAULT);
+        pie.setEntryLabelTextSize(20f);
 
         //Leyenda
         Legend legend=pie.getLegend();
