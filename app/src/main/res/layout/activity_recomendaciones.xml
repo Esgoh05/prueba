@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".RecomendacionesActivity">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/cuadrado_corners"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/item_name3"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/t_3"
+                android:foregroundGravity="center_vertical"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/item_name3"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/item_textName3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/mi_texto"
+                    android:textColor="#1976D2"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cuadrado_corners"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+            <ImageView
+                android:id="@+id/item_name33"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/t_2"
+                android:foregroundGravity="center_vertical"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/item_name33"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/item_txtTip2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:singleLine="true"
+                    android:text="@string/tip2"
+                    android:textColor="#1976D2"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cuadrado_corners"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:focusable="true"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout1"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/item_name2"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/t_1"
+                android:foregroundGravity="center_vertical"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/item_name2"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/item_txtTip1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/tip1"
+                    android:textColor="#1976D2"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cuadrado_corners"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+            tools:ignore="MissingConstraints"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/item_txtRec"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:foregroundGravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:textSize="29.7sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:text="@string/layout4_rec" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/item_txtRec"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/item_txtRec3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/tip2_2"
+                    android:textColor="#1976D2"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout6"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cuadrado_corners"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:focusable="true"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout1"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/item_name22"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:textSize="26sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:text="@string/layout2_rec"
+                android:foregroundGravity="center_vertical"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/item_name22"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txtRec2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/tip1_1"
+                    android:textColor="#1976D2"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout7"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cuadrado_corners"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+
+            <ImageView
+                android:id="@+id/name3"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/puerquito4"
+                android:foregroundGravity="center_vertical"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/name3"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/item_txtTip3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/tip3"
+                    android:textColor="#1976D2"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout8"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cuadrado_corners"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:focusable="true"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+
+            <TextView
+                android:id="@+id/name3_1"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:text="@string/layout6_rec"
+                android:foregroundGravity="center_vertical"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/name3_1"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txtRec3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/tip3_3"
+                    android:textColor="#1976D2"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout9"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/cuadrado_corners"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout7">
+
+            <ImageView
+                android:id="@+id/name4"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/t_4"
+                android:foregroundGravity="center_vertical"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/name4"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/item_txtTip4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/tip4"
+                    android:textColor="#1976D2"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout10"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/cuadrado_corners"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:focusable="true"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout7">
+
+            <TextView
+                android:id="@+id/name5"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:textSize="27.5sp"
+                android:text="@string/layout8_rec"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:foregroundGravity="center_vertical"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/name5"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/item_MoreInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/tip4_4"
+                    android:textColor="#1976D2"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
